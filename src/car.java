@@ -1,20 +1,15 @@
-public class car {
+public class Car {
     private String name;
-    private int price;
-
-    public car() {
+    private double price;
+    
+    public Car(){
         name = " ";
         price = 0;
     }
-
-    public car(String name) {
+    
+    public Car(String name, Double price2){
         this.name = name;
-        price = 0;
-    }
-
-    public car(String name, int price) {
-        this.name = name;
-        this.price = price;
+        this.price = price2;
     }
 
     public String getName() {
@@ -25,12 +20,14 @@ public class car {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
     public void setPrice(int price) {
         this.price = price;
     }
-
+    public String toString() {
+        return "Car { name='" + name + "', price=" + price + " } ";
+    }
 }

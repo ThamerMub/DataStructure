@@ -1,30 +1,30 @@
 public class Node {
+    private Car car;
     private Node next;
-    private car c1;
-
-    public Node() {
-        c1 = null;
+    
+    public Node(){
+        car = null;
+        next = null; 
+    }
+    
+    public Node(Car car){
+        this.car = car;
         next = null;
     }
-
-    public Node(car c1) {
-        this.c1 = c1;
-        next = null;
-    }
-
-    public Node(car c1, Node next) {
-        this.c1 = c1;
+    
+    public Node(Car car, Node next){
+        this.car = car;
         this.next = next;
     }
 
-    public car getC1() {
-        return c1;
+    public Car getCar() {
+        return car;
     }
 
-    public void setC1(car c1) {
-        this.c1 = c1;
+    public void setCar(Car car) {
+        this.car = car;
     }
-
+    
     public Node getNext() {
         return next;
     }
@@ -32,5 +32,4 @@ public class Node {
     public void setNext(Node next) {
         this.next = next;
     }
-
 }
