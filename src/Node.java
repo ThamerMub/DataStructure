@@ -1,7 +1,7 @@
 public class Node {
+    public static final Node getnext = null;
     private Car car;
     private Node next;
-    
     public Node(){
         car = null;
         next = null; 
