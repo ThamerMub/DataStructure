@@ -25,7 +25,7 @@ public class stack {
             System.out.println("Stack is empty");
             return;
         }
-        System.out.println("Car popped from stack:"+top.getCar());
+        System.out.println("Car popped from stack: " + top.getCar());
         top = top.getNext();
         size--;
     }

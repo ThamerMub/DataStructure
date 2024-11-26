@@ -7,9 +7,9 @@ public class Car {
         price = 0;
     }
     
-    public Car(String name, Double price2){
+    public Car(String name, double price){
         this.name = name;
-        this.price = price2;
+        this.price = price;
     }
 
     public String getName() {
@@ -24,10 +24,11 @@ public class Car {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
+    
     public String toString() {
-        return "Car { name='" + name + "', price=" + price + " } ";
+        return "Car{ name = '" + name + "', price = " + price + " }";
     }
 }
